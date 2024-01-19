@@ -23,8 +23,29 @@ header {
     /* border-color: brown; */
     background-color: aquamarine;
 }
-
-
+/* desde aqui la animacion */
+.frase {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: my-animation 3s infinite;
+  }
+  
+  @keyframes my-animation {
+    0% {
+      background-color: red;
+      transform: translateX(0);
+    }
+    50% {
+      background-color: green;
+      transform: translateX(200px);
+    }
+    100% {
+      background-color: red;
+      transform: translateX(0);
+    }
+  }
+  /* hasta aqui la animacion */
 header form {
     display: none;
 }
